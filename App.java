@@ -1,14 +1,14 @@
 public class App {
 
     public static void main(String[] args) {
-        System.out.println("Hello from Jenkins CI Test!");
-        
-        App app = new App();
-        int result = app.add(10, 20);
-        System.out.println("Addition Result: " + result);
-    }
+        System.out.println("Running Basic Jenkins CI Java Test");
 
-    public int add(int a, int b) {
-        return a + b;
+        Calculator calc = new Calculator();
+
+        int mul = calc.multiply(5, 4);
+        int sub = calc.subtract(10, 3);
+
+        System.out.println("Multiply Result: " + mul);
+        System.out.println("Subtract Result: " + sub);
     }
 }
